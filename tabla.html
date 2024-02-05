@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Compare Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th class="sticky-header">Header 1</th>
+                    <th class="sticky-header">Header 2</th>
+                    <th class="sticky-header">Header 3</th>
+                    <th class="sticky-header">Header 4</th>
+                    <th class="sticky-header">Header 5</th>
+                    <th class="sticky-header">Header 6</th>
+                    <th class="sticky-header">Header 7</th>
+                    <th class="sticky-header">Header 8</th>
+                    <th class="sticky-header">Header 9</th>
+                    <th class="sticky-header">Header 10</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add 20 rows with 10 data cells each -->
+                <?php
+                    for ($i = 1; $i <= 20; $i++) {
+                        echo "<tr>";
+                        for ($j = 1; $j <= 10; $j++) {
+                            echo "<td>Data $i-$j</td>";
+                        }
+                        echo "</tr>";
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
